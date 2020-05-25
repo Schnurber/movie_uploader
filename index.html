@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Upload Form">
+  <meta name="author" content="Dieter Meiller">
+  <style type="text/css">
+    .form-signin {
+      width: 100%;
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+  </style>
+  <title>Film-Upload zur OTH-Filmnacht</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="py-5 text-center">
+  <div class="container" id="container">
+
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="images/oth-logo.png" alt="" width="200" height="101">
+      <h2>Film-Upload zur OTH-Filmnacht</h2>
+      <p class="lead">Bitte geben Sie Ihre E-Mail Adresse an! Ihr persönlicher Link zum Upload-Formular wird Ihnen zugesendet.</p>
+    </div>
+
+<form class="needs-validation form-signin" action="sendMail.php" method="post" novalidate>
+
+  <div class="mb-3">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="dein.name@mailprovider.de" required>
+    <div class="invalid-feedback">
+        Bitte eine E-Mail Adresse eingeben!
+    </div>
+  </div>
+
+  <hr class="mb-4">
+  <button class="btn btn-primary btn-lg btn-block" id="submitbtt" type="submit">Absenden</button>
+</form>
+  </div>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2019 OTH Amberg-Weiden</p>
+  </footer>
+</div>
+
+<script src="bootstrap/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+   <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,6 @@
+Options +Indexes
+
+AuthType Basic
+AuthName "Bitte Einloggen"
+AuthUserFile /var/www/html/movies/.htpasswd
+Require valid-user
