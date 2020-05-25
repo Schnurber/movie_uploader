@@ -6,4 +6,4 @@ Die [Anleitung gibt es auf Youtube](https://youtu.be/9wIVr9mBK-U)
 
 Folgende Bibliotheken werden noch benötigt:
 Im Ordner js: [jquery-3.4.1.min.js](https://jquery.com/download/)
-im Ordner Bootstrap: [bootstrap.min.css](https://getbootstrap.com/docs/4.5/getting-started/download/)
+Im Ordner Bootstrap: [bootstrap.min.css](https://getbootstrap.com/docs/4.5/getting-started/download/)
